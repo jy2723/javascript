@@ -15,10 +15,35 @@
 
 
 
-// call back
+
+// map method
 nums = [1,5,6,8,7]
 let calsquare = (num => {
     console.log(num * num);
     
 });
-nums.forEach(calsquare)
+let new_arr = nums.map((val) =>{
+    return val * val;
+});
+console.log(new_arr)
+
+// filter method
+nums = [1,5,6,8,7]
+let even_arr = nums.filter((val) =>{
+    return val %2 ==0 ;
+});
+console.log(even_arr)
+let n =prompt("enter number of elements:")
+
+arr=[];
+for(let i=1;i<=n;i++){
+    arr[i-1] = i
+}
+console.log(arr)
+// reduce method
+let sum = arr.reduce((prev, curr) => {
+    return prev+curr
+}
+)
+console.log(sum)
+
